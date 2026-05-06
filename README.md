@@ -31,3 +31,12 @@ docker logs lil_postgres --tail 200
 
 # Build & start everything (one-shot):
 docker-compose up -d --build
+
+## Using Adminer for the first time?
+# Adminer Connection
+
+System: PostgreSQL
+Server: postgres — use the Compose service name (your docker-compose.yml defines the service postgres). db is incorrect unless your service is named db.
+Username: postgres
+Password: postgres
+Database: local (this is POSTGRES_DB from the compose file)
